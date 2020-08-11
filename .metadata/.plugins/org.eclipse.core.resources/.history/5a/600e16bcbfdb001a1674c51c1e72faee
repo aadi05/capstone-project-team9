@@ -1,0 +1,47 @@
+package com.icinbank.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.icinbank.dao.UserRepository;
+import com.icinbank.model.User;
+import com.icinbank.service.RegistrationService;
+
+@Service
+public class RegistrationServiceImpl implements RegistrationService{
+	
+	@Autowired
+	UserRepository dao;
+
+	@Override
+	public void createAccount(User details) {
+		// TODO Auto-generated method stub
+		dao.save(details);
+		
+	}
+
+	@Override
+	public boolean usernameAlreadyExists(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean emailAlreadyExists(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean panAlreadyExists(String pan) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean phoneNumberAlreadyExists(String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+
+}

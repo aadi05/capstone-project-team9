@@ -1,0 +1,18 @@
+package com.icinbank.controller;
+
+import com.icinbank.service.RegistrationService;
+
+public class RegistrationController {
+	
+	@Autowired
+	private RegistrationService service;
+	
+	//private MultiValueMap<String, String> map;
+
+	@PostMapping("/register")
+	public User createUser(@RequestBody User user) {
+
+		return service.createUser(user);
+	}
+
+}

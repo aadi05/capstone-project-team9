@@ -1,0 +1,22 @@
+package com.icinbank.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.icinbank.service.RegistrationService;
+import com.icinbank.service.User;
+
+public class RegistrationController {
+	
+	@Autowired
+	private RegistrationService service;
+	
+	//private MultiValueMap<String, String> map;
+
+	@PostMapping("/register")
+	public User createUser(@RequestBody User user) {
+
+		return service.createAccount(user);
+	}
+
+}

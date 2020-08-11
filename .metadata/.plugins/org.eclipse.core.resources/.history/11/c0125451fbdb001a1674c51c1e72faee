@@ -1,0 +1,30 @@
+package com.icinbank.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.icinbank.dao.UserRepository;
+import com.icinbank.model.LoginDetails;
+import com.icinbank.model.LoginResponse;
+import com.icinbank.service.LoginService;
+
+public class LoginServiceImpl implements LoginService{
+	
+	@Autowired
+	private UserRepository dao;
+	
+	@Override
+	public LoginResponse customerLogin(LoginDetails login){
+		User user=null;
+		try {
+			user=dao.findByUsername(login.getUsername());
+			if(!login.getPassword().equals(user.getPassword())) {
+				throw new Exception();
+			}
+		} 
+		catch (Exception e) {
+			throw new Exception("Username or password is incorrect");
+		}
+		return user;
+	}
+
+}

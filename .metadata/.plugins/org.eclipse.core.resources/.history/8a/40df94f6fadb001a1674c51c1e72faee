@@ -1,0 +1,6 @@
+package com.icinbank.model;
+
+public class LoginDetails {
+	private String username;
+	private String password;
+}

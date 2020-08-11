@@ -1,0 +1,9 @@
+package com.icinbank.model;
+
+public class RegisterResponse {
+	
+	private boolean registrationStatus;
+	private String responseMessage;
+	private String username;
+	
+}

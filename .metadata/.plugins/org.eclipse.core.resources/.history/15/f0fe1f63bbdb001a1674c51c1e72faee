@@ -1,0 +1,9 @@
+package com.icinbank.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.icinbank.service.User;
+
+public interface UserRepository extends CrudRepository<User, Integer> {
+
+}

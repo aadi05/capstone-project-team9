@@ -1,0 +1,5 @@
+package com.icinbank.service.impl;
+
+public class LoginServiceImpl {
+
+}

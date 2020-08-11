@@ -1,0 +1,11 @@
+package com.icinbank.service;
+
+public interface RegistrationService {
+	
+	public void createAccount(UserDetails details);
+	public boolean usernameAlreadyExists(String username);
+	public boolean emailAlreadyExists(String email);
+	public boolean panAlreadyExists(String pan);
+	public boolean phoneNumberAlreadyExists(String phone);
+
+}
