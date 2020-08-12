@@ -36,7 +36,7 @@ public class LoginServiceImpl implements LoginService{
 		}
 		response.setLoginStatus(flag);
 		response.setResponseMessage(message);
-		response.setUsername(login.getUsername());
+		response.setUsername(user.getUsername());
 		return response;
 	}
 

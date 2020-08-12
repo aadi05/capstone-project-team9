@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.icinbank.service.RegistrationService"/>
+<fullyQualifiedTypeName name="com.icinbank.service.User"/>
+<fullyQualifiedTypeName name="com.icinbank.model.UserDetails"/>
+<fullyQualifiedTypeName name="com.icinbank.dao.UserRepository"/>
+<fullyQualifiedTypeName name="com.icinbank.service.LoginService"/>
+<fullyQualifiedTypeName name="com.icinbank.model.User"/>
+<fullyQualifiedTypeName name="com.icinbank.model.RegisterResponse"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.icinbank.model.LoginDetails"/>
+<fullyQualifiedTypeName name="com.icinbank.model.LoginResponse"/>
+<fullyQualifiedTypeName name="com.icinbank.service.impl.LoginServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.apache.commons.codec.digest.DigestUtils"/>
+</qualifiedTypeNameHistroy>
